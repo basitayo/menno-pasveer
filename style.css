@@ -1,0 +1,952 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #EDEBE9;
+    position: relative;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(248, 247, 243, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+.headernav{
+    display: flex;
+    gap: 30px;
+}
+
+.headernav a{
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.header-joinbtn{
+    padding: 8px 25px;
+    border-radius: 10px;
+    background-color: #C94C1E;
+    color: #F8F8F8;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+main{
+    margin: 0 130px;
+}
+
+.hero{
+    height: 100vh;
+    border-radius: 30px;
+    padding: 50px 0px 20px 0px;
+}
+
+.hero-roback{
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+.herotextsses{
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.imagechange-circles p{
+    color: #4a4a4a;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   HERO CAROUSEL & INDICATORS
+   ========================================================================== */
+
+.imagechange-circles {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.greycircles {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.circle-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d1d1d1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle-indicator.active {
+    background-color: #111; /* Changes to black when active */
+    width: 10px;
+    height: 10px;
+}
+
+/* Smooth background transitions for the hero and preview images */
+.hero-imagae, .explorimgg {
+    transition: background-image 0.6s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+.her-modere h2{
+    font-size: 6.5rem;
+    font-weight: 100;
+    line-height: 1.1em;
+}
+
+.her-modere em{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.exploratiiionsees{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.explorimgg{
+    background-image: url(images/Stanleydopsleutel27mm1.png);
+    background-size: cover;
+    background-position: center;
+    width: 180px;
+    height: 195px;
+    border-radius: 20px;
+}
+
+.exploritext{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exploritext p{
+    width: 100%;
+    max-width: 350px;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    color: #838383;
+}
+
+
+.eexibbi{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.hero-imagae{
+    width: 40%;
+    height: 100%;
+    background-image: url(images/MAluminium1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.imaa-bluuff{
+    background-color: rgba(200, 200, 200, 0.1);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    border-radius: 50px;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.immabtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    color: #F8F8F8;
+}
+
+.bttgn{
+    border: 1px solid #838383;
+}
+
+.immablu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.traaps{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.9rem;
+}
+
+.traas{
+    color: #F8F8F8;
+    font-size: 1.1rem;
+
+}
+
+
+.philosophy-sect{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.quotesect p{
+    width: 100%;
+    max-width: 500px;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.5em;
+}
+
+.quotesect em{
+    color: #C94C1E;
+    font-weight: 300;
+}
+
+
+
+.current-exhibisec{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.currennn-title{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.currennn-title h3{
+    width: 100%;
+    max-width: 300px;
+    line-height: 1.3em;
+}
+
+.secti-titll{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+.currenne-date{
+    text-align: right;
+}
+
+.currenne-date p{
+    font-size: 0.9rem;
+    color: #838383;
+}
+
+.currenne-date h5{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.curren-exhibiiit {
+    display: flex;
+    width: 100%;
+    height: 550px; /* Gives the container a fixed, reliable height */
+    gap: 30px;
+}
+
+.currentex-img{
+    background-image: url(images/100voorinsta2024.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 60%;
+    border-radius: 30px;
+}
+
+.currentex-info{
+    height: 100%;
+    width: 40%;
+    background-color: #F8F8F8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.currente-partone{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.currsmal{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #C94C1E;
+}
+
+.currtitl{
+    font-size: 2.2rem;
+    font-weight: 100;
+    width: 100%;
+    max-width: 300px;
+}
+
+.currinfot{
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    color: #838383;
+}
+
+
+.currshow{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.resbtn{
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #838383;
+    font-weight: 500;
+}
+
+
+/* ==========================================================================
+   SELECTED ARTISTS CAROUSEL
+   ========================================================================== */
+
+.selected-exib {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden; /* Prevents horizontal scroll on the whole page */
+}
+
+.selected-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.carousel-nav {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #d1d1d1;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #F8F8F8;
+    color: #111;
+}
+
+/* Container that handles the scrolling */
+.artists-carousel-container {
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.artists-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.artists-track {
+    display: flex;
+    gap: 25px;
+    width: max-content; /* Allows track to grow based on content */
+    padding-bottom: 10px;
+}
+
+.artist-card {
+    width: 280px; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0; /* Prevents cards from squishing */
+}
+
+.abspa{
+    margin-top: 40px;
+}
+
+.artist-card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.artist-category {
+    font-size: 0.85rem;
+    color: #838383;
+}
+
+.artist-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #111;
+}
+
+
+.selectedworks-sect{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.selectedwor-title{
+    height: 10%;
+}
+
+.selectedss{
+    font-size: 1.5rem;
+}
+
+.paarrent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    height: 90%;
+}
+
+.diiv1 {
+    grid-area: 1 / 1 / 4 / 2; 
+    background-image: url(images/woodcutter41.png);
+}
+.diiv2 {
+    grid-area: 1 / 2 / 3 / 3; 
+    background-image: url(images/Torx+schroef+165+x1.png);
+}
+.diiv3 {
+    grid-area: 3 / 2 / 5 / 3; 
+    background-image: url(images/MAluminium1.png);
+}
+.diiv4 {
+    grid-area: 2 / 3 / 5 / 4; 
+    background-image: url(images/Stanleydopsleutel27mm1.png);
+}
+
+/* 
+.ggrii img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 5px;
+} */
+
+.ggrii{
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+/* ==========================================================================
+   PROGRAM & VISIT SECTION
+   ========================================================================== */
+
+.program-visit-wrapper {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #838383;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Program List */
+.program-list {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.program-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.active-event {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-bottom: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    margin-bottom: 15px;
+}
+
+/* Update existing .program-item and add the hover state */
+.program-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 20px; /* Prepare for the hover background */
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+}
+
+.program-item:hover {
+    background-color: #ffffff;
+    border-bottom-color: transparent;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    transform: translateY(-2px);
+}
+
+.prog-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prog-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #C94C1E; /* Matching your existing orange/rust color */
+    letter-spacing: 1px;
+}
+
+.prog-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #111;
+}
+
+.prog-time-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.prog-time {
+    color: #838383;
+    font-size: 0.95rem;
+}
+
+/* Visit Card */
+.visit-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 60px;
+    height: 400px;
+}
+
+.visit-map {
+    width: 50%;
+    /* Replace this background color with your map image url() */
+    background-color: #e5e5e5; 
+    background-image: url('images/map-placeholder.jpg'); /* Add map image here */
+    background-size: cover;
+    background-position: center;
+}
+
+.visit-details {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.visit-title {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.visit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.v-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #838383;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.v-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #111;
+}
+
+.v-text a {
+    color: #111;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* ==========================================================================
+   NEWSLETTER SECTION
+   ========================================================================== */
+
+.newsletter-section {
+    text-align: center;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.newsletter-section h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.newsletter-section p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.newsletter-form input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 70%;
+    color: #111;
+}
+
+.newsletter-form input::placeholder {
+    color: #a0a0a0;
+}
+
+.newsletter-form button {
+    background: transparent;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #111;
+}
+
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
+
+.site-footer {
+    background-color: #050505;
+    color: #ffffff;
+    border-radius: 40px 40px 0 0;
+    padding: 80px 100px 40px 100px;
+    margin-top: 40px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.footer-brand h2 {
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+.footer-brand p {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #a0a0a0;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 15px;
+}
+
+.link-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-col a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.link-col a:hover {
+    opacity: 0.6;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: #222;
+    margin-bottom: 30px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #a0a0a0;
+}
+
+.footer-bottom a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+
+
+/* Fix 1: Establish consistent spacing across all major sections */
+.philosophy-sect, 
+.current-exhibisec, 
+.selected-exib, 
+.selectedworks-sect, 
+.program-visit-wrapper {
+    height: auto; /* Overrides previous fixed heights */
+    padding: 100px 0; /* Consistent vertical rhythm */
+}
+
+/* Fix 2: Adjust specific sections that need unique breathing room */
+.philosophy-sect {
+    padding: 140px 100px; /* Gives the quote more isolation */
+}
+
+.current-exhibisec {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+/* Fix 3: Ensure the parent grid for selected works has a proper height now */
+.selectedworks-sect .paarrent {
+    height: 700px; /* Gives the grid a defined height since we removed 100vh */
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (TABLETS & MOBILE)
+   ========================================================================== */
+
+/* TABLET (1024px and below) */
+@media (max-width: 1024px) {
+    /* Fluid Margins & Padding */
+    header { padding: 15px 40px; }
+    main { margin: 0 40px; }
+    
+    .philosophy-sect { 
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 60px 0; 
+        gap: 30px; 
+    }
+    
+    /* Hero Section Stacking */
+    .hero { height: auto; 
+            margin-top: 50px;
+    }
+    .hero-roback { flex-direction: column; padding: 20px; }
+    .herotextsses { width: 100%; padding: 20px 0; gap: 40px; }
+    .hero-imagae { width: 100%; height: 500px; margin-top: 20px; }
+    .her-modere h2 { font-size: 4rem; }
+    
+    .exploratiiionsees { flex-direction: column; align-items: flex-start; gap: 30px; }
+    .explorimgg { width: 100%; height: 300px; }
+
+    /* Current Exhibition Stacking */
+    .currennn-title { flex-direction: column; align-items: flex-start; gap: 15px; }
+    .currennn-title h3 { max-width: 100%; }
+    .currenne-date { text-align: left; }
+    
+    .curren-exhibiiit { flex-direction: column; height: auto; }
+    .currentex-img { width: 100%; height: 400px; }
+    .currentex-info { width: 100%; }
+
+    /* Visit Map Stacking */
+    .visit-card { flex-direction: column; height: auto; }
+    .visit-map { width: 100%; height: 300px; }
+    .visit-details { width: 100%; padding: 40px; }
+
+    /* Footer Adjustments */
+    .site-footer { padding: 60px 40px 40px 40px; }
+    .footer-top { flex-direction: column; align-items: flex-start; gap: 40px; }
+    .footer-brand h2 { font-size: 4rem; }
+}
+
+/* MOBILE (768px and below) */
+@media (max-width: 768px) {
+    /* Tighter Margins */
+    header { 
+        padding: 15px 20px; 
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    main { margin: 0 20px; }
+    
+    /* Hide desktop nav to prevent crowding (Optional: can add a hamburger menu later) */
+    .headernav { align-items: center; }
+    
+    /* Typography Scaling */
+    .her-modere h2 { font-size: 3rem; }
+    .secti-titll { font-size: 1.8rem; }
+    .quotesect p { font-size: 1.4rem; }
+    .footer-brand h2 { font-size: 3rem; }
+    
+    /* Grid Overrides for Selected Works */
+    .selectedworks-sect .paarrent { 
+        display: flex; 
+        flex-direction: column; 
+        height: auto; 
+    }
+    .diiv1, .diiv2, .diiv3, .diiv4 { 
+        height: 300px; 
+        width: 100%;
+    }
+
+    /* Program List adjustments */
+    .program-item { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .prog-title { font-size: 1.4rem; }
+    
+    /* Visit Details Grid to 1 Column */
+    .visit-grid { grid-template-columns: 1fr; gap: 25px; }
+    
+    /* Newsletter */
+    .newsletter-section h2 { font-size: 1.8rem; }
+    .newsletter-form { flex-direction: column; gap: 20px; border-bottom: none; }
+    .newsletter-form input { width: 100%; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    .newsletter-form button { width: 100%; padding: 15px; background-color: #111; color: #fff; border-radius: 10px; }
+    
+    /* Footer Bottom Stacking */
+    .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
+    .footer-links { flex-direction: column; gap: 30px; }
+}
